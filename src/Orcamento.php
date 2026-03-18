@@ -1,8 +1,9 @@
 <?php
 
-namespace Estudo\DesignPattern;
+namespace Alura\DesignPattern;
 
-class Orcamento {
-    public int $quantidadeDeItens;
+class Orcamento
+{
+    public int $quantidadeItens;
     public float $valor;
 }

@@ -2,9 +2,9 @@
 
 namespace Alura\DesignPattern\Descontos;
 
-use Estudo\DesignPattern\Orcamento;
+use Alura\DesignPattern\Orcamento;
 
-abstract class Desconto 
+abstract class Desconto
 {
     protected ?Desconto $proximoDesconto;
 
@@ -13,5 +13,5 @@ abstract class Desconto
         $this->proximoDesconto = $proximoDesconto;
     }
 
-    abstract public function calculaDescontos(Orcamento $orcamento): float;
+    abstract public function calculaDesconto(Orcamento $orcamento): float;
 }

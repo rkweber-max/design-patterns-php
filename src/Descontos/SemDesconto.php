@@ -2,17 +2,16 @@
 
 namespace Alura\DesignPattern\Descontos;
 
-use Estudo\DesignPattern\Orcamento;
+use Alura\DesignPattern\Orcamento;
 
-class DescontoMais5Itens extends Desconto
+class SemDesconto extends Desconto
 {
-
     public function __construct()
     {
         parent::__construct(null);
     }
 
-    public function calculaDesontos(Orcamento $orcamento): float
+    public function calculaDesconto(Orcamento $orcamento): float
     {
         return 0;
     }
